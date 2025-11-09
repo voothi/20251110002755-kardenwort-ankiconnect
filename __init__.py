@@ -1459,6 +1459,16 @@ class AnkiConnect:
 
         self.save_model(mm, model)
 
+    @util.api()
+    def setDeckDescription(self, deck, description):
+        collection = self.collection()
+        deck_obj = collection.decks.by_name(deck)
+        if deck_obj is None:
+            raise Exception('deck was not found: {}'.format(deck))
+        
+        deck_obj['desc'] = description
+        collection.decks.save(deck_obj)
+        return True
 
     @util.api()
     def modelFieldSetFont(self, modelName, fieldName, font):
