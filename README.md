@@ -18,6 +18,8 @@ The primary purpose of this fork is to add a single, powerful feature: the abili
   - [Kardenwort Ecosystem](#kardenwort-ecosystem)
   - [License and Acknowledgements](#license-and-acknowledgements)
 
+---
+
 ## The Core Enhancement: Programmatic Deck Descriptions
 
 This build introduces one new API action to the standard AnkiConnect feature set, detailed below.
